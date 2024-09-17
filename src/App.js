@@ -8,11 +8,12 @@ import Product from './components/Product/product';
 import Contact from './components/Contact/contact';
 import Home from './components/Home/home';
 import NavBarExample from './layouts/navbar';
-import Footer from './components/footer/footer';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   return (
-    <div className="App">
+    <div>
 
 <BrowserRouter>
 
@@ -25,7 +26,7 @@ function App() {
     <Route path='*' element={ <Navigate replace to="/"/> }/>
   </Route>
 </Routes> 
-<Footer />
+
 </BrowserRouter>
 
     </div>
